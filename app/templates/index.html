@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>City AI Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to City AI Engine</h1>
+    <form action="/profile" method="POST">
+        <button type="submit">Profile City</button>
+    </form>
+
+    <form action="/footpath-assessment" method="POST" enctype="multipart/form-data">
+        <input type="file" name="footpath_image">
+        <button type="submit">Assess Footpath</button>
+    </form>
+</body>
+</html>
+
